@@ -34,7 +34,7 @@ const funzioneSumbmit = function (e) {
 
   Array.from(bottoni).forEach(function (bottone) {
     bottone.addEventListener("click", function () {
-      let divisoreDaRimuovere = document.getElementById("divisore-" + stringa);
+      let divisoreDaRimuovere = this.parentElement;
       if (divisoreDaRimuovere) {
         divisoreDaRimuovere.remove();
       }
